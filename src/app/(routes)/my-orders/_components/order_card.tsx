@@ -2,7 +2,24 @@ import { OrderData } from "@/types/OrderData";
 import Link from "next/link";
 import React from "react";
 
-const OrderCard = ({ order, admin }: { order: OrderData; admin: boolean }) => {
+type OData = {
+  id: string;
+  totalPrice: number;
+  isPaid: boolean;
+  name: string;
+  phone: string;
+  address: string;
+  city: string;
+  state: string;
+  pincode: string;
+  order_status: string;
+  order_time: Date;
+  razorpay_order_id: string;
+  userId: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
+const OrderCard = ({ order, admin }: { order: OData; admin: boolean }) => {
   return (
     <div className="card w-full mb-7">
       <Link

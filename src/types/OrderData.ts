@@ -4,5 +4,5 @@ export type OrderItemWithProduct = OrderItem & {
   product: Products;
 };
 
-// export type OrderData = Order & { orderItems: OrderItemWithProduct[] };
-export type OrderData = Order;
+export type OrderData = Order & { orderItems: OrderItemWithProduct[] };
+// export type OrderData = Order;
