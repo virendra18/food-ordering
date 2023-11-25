@@ -35,7 +35,7 @@ const MyOrdersClient = () => {
     <section>
       <h2 className="text-primary text-3xl font-bold my-10">Your Orders</h2>
       <div className="card ">
-        {data.length > 0 ? (
+        {data?.length > 0 ? (
           data.map((order: OrderData) => (
             <OrderCard order={order} key={order.id} admin={false} />
           ))
