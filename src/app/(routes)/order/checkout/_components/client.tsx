@@ -216,7 +216,7 @@ const CheckoutClient = () => {
                     type="text"
                     {...register("name")}
                     id="name"
-                    defaultValue={userInfo[0]?.user.name}
+                    defaultValue={userInfo[0]?.user?.name}
                     className=" border bg-[#f8f8f8] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     placeholder="Enter your name"
                     required
@@ -250,7 +250,7 @@ const CheckoutClient = () => {
                   <input
                     type="text"
                     {...register("address")}
-                    defaultValue={userInfo[0].address}
+                    defaultValue={userInfo[0]?.address}
                     id="address"
                     placeholder="House No/ Apt No"
                     className=" border bg-[#f8f8f8] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
@@ -266,7 +266,7 @@ const CheckoutClient = () => {
                   <input
                     type="text"
                     {...register("city")}
-                    defaultValue={userInfo[0].city}
+                    defaultValue={userInfo[0]?.city}
                     id="city"
                     placeholder="City Name"
                     className=" border bg-[#f8f8f8] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
@@ -282,7 +282,7 @@ const CheckoutClient = () => {
                   <select
                     id="state"
                     {...register("state")}
-                    defaultValue={userInfo[0].state}
+                    defaultValue={userInfo[0]?.state}
                     className=" border bg-[#f8f8f8] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                   >
                     <option
@@ -305,7 +305,7 @@ const CheckoutClient = () => {
                     type="text"
                     {...register("pincode")}
                     id="pincode"
-                    defaultValue={userInfo[0].pincode}
+                    defaultValue={userInfo[0]?.pincode}
                     placeholder="Pin code"
                     className=" border bg-[#f8f8f8] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                   />
