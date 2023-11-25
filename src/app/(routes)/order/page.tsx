@@ -3,6 +3,8 @@ import { Products } from "@prisma/client";
 import React from "react";
 import FoodCategory from "./_components/food-category";
 
+export const dynamic = "force-dynamic";
+
 const OrderPage = async () => {
   // const res = await fetch("/api/items");
   // const items: Products[] = await res.json();
