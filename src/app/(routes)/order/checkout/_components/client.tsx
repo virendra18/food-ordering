@@ -216,7 +216,7 @@ const CheckoutClient = () => {
                     type="text"
                     {...register("name")}
                     id="name"
-                    defaultValue={userInfo[0].user.name}
+                    defaultValue={userInfo[0]?.user.name}
                     className=" border bg-[#f8f8f8] border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                     placeholder="Enter your name"
                     required
