@@ -7,7 +7,7 @@ const AdminClient = () => {
   const handleChange = async (event: any) => {
     console.log(event.target.value);
     setShowImg(true);
-    const res = await fetch("https://flask.jsx18.link/graph", {
+    const res = await fetch("https://flask-app-production-c09b.up.railway.app/graph", {
       method: "POST",
 
       headers: {
